@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Bilgi</title>
+</head>
+<style>
+       label,input,textarea,button{
+        display: block;
+        margin-top: 10px;
+    }
+    input[type="text"],
+    textarea{
+        width: calc(100%-24px);
+    }
+    table{
+        border-collapse: collapse;
+        width: 50%;
+    }
+    th,td{
+        border: 1px;
+        padding: 8px;
+        text-align: left;
+    }
+    form{
+        width: 50%;
+    }
+    
+</style>
+<!--display:block tek hizada olmasını sağlar-->
+
+<body>
+
+        <h2>Kullanıcı Bilgi Formu</h2>
+        <form>
+            <label for="ad">Adınız</label>
+            <input type="text" id="ad" name="ad">
+
+            <label for="ad">Soyadınız</label>
+            <input type="text" id="soyad" name="soyad">
+
+            <label for="ad">İletişim Numaranız</label>
+            <input type="text" id="iletişim" name="iletişim">
+
+            <label for="mesaj">Mesajınız</label>
+            <textarea name="mesaj" id="mesaj" cols="45" rows="4"></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+        <h2>Kullanıcı Bilgileri</h2>
+        <table>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon</th>
+                <th>Mesaj</th>
+            </tr>
+            <tr>
+                <td>Birsen</td>
+                <td>Aşan</td>
+                <td>000-000-00-00</td>
+                <td>Full-Stack Web Developer Bootcamp hakkında düşüncelerimi paylaşmak isterim.</td>
+            </tr>
+        </table>
+    
+</body>
+</html>
