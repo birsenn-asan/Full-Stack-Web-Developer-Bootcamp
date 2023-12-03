@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Bilgi</title>
+    <style>
+        label,input,textarea,button{
+         display: block;
+         margin-top: 10px;
+     }
+     input[type="text"],
+     textarea{
+         width: calc(100%-24px);
+     }
+     table{
+         border-collapse: collapse;
+         width: 50%;
+     }
+     th,td{
+         border: 1px;
+         padding: 8px;
+         text-align: left;
+     }
+     form{
+         width: 50%;
+     }
+     
+ </style>
+ <!--display:block tek hizada olmasını sağlar-->
 </head>
-<style>
-       label,input,textarea,button{
-        display: block;
-        margin-top: 10px;
-    }
-    input[type="text"],
-    textarea{
-        width: calc(100%-24px);
-    }
-    table{
-        border-collapse: collapse;
-        width: 50%;
-    }
-    th,td{
-        border: 1px;
-        padding: 8px;
-        text-align: left;
-    }
-    form{
-        width: 50%;
-    }
-    
-</style>
-<!--display:block tek hizada olmasını sağlar-->
-
 <body>
 
         <h2>Kullanıcı Bilgi Formu</h2>
@@ -41,7 +40,7 @@
             <input type="text" id="soyad" name="soyad">
 
             <label for="ad">İletişim Numaranız</label>
-            <input type="text" id="iletişim" name="iletişim">
+            <input type="text" id="iletisim" name="iletisim">
 
             <label for="mesaj">Mesajınız</label>
             <textarea name="mesaj" id="mesaj" cols="45" rows="4"></textarea>

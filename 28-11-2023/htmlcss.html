@@ -1,0 +1,68 @@
+<!--
+    HTML ve CSS arasındaki fark html sayfanın yapısını oluştururken css bu yapının görünüm özelliklerini belirler.
+    CSS Üç yapıdan oluşur.
+    1- Selector=id,class ve etiket olarak 3 farklı şekilde stil uygular
+    2- properties=özelliktir.
+    3- value=değerdir
+    Yani tanımla değerini belirt ve ata
+   style kısmında etiket çağırımı direk adı ile yapılır.
+   id ise # işareti başına konularak adı yazılır.
+   class çağrımında başına nokta konularak adı yazılır.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!--<style>
+        h1{
+           color: blueviolet;
+        }
+        #h2id{
+            color: black;
+            background-color: cadetblue;
+        }
+        .h3class{
+            color: aqua;
+            background-color: black;
+        }
+        *{
+            
+            font-weight: bold;
+            font-size: 25px;
+            bütüne uygular
+            !important bunu kesinlikle uygula demektir. 
+        }
+    </style
+   -->
+    <link rel="stylesheet" href="./css/style.css">
+ 
+</head>
+<body>
+   <!--<h1 style="color: red;">Başlık</h1>
+    <h1>Başlık2</h1>
+    <h2 id="h2id">Başlık3</h2>
+    <h3 class="h3class">Başlık4</h3>--> 
+    <header>
+        <h1 id="logo">Header 1</h1>
+        <h1 style="color: aqua;" id="logo">Logo</h1>
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </header>
+    <h1>Header2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt a <span>doloribus</span> eaque alias totam aperiam temporibus optio beatae.</p>
+    <p id="paraf" class="parCl info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, perspiciatis corporis. Nemo porro dolores rem distinctio expedita alias <span>voluptatem corporis</span> sequi laboriosam quia laborum, aspernatur tempora nisi accusamus velit quis.</p>
+    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, <span class="spanCl">perspiciatis</span> corporis. Nemo porro dolores rem distinctio expedita alias voluptatem corporis sequi laboriosam quia laborum, aspernatur tempora nisi accusamus velit quis.</p>
+    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, perspiciatis corporis. Nemo porro dolores rem distinctio expedita alias voluptatem corporis sequi laboriosam quia laborum, aspernatur tempora nisi accusamus velit quis.</p>
+    <a href="#">Delay</a>
+    
+</body>
+</html>

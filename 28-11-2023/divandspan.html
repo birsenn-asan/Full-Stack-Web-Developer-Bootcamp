@@ -1,0 +1,35 @@
+<!--
+    -div ve span sayfa düzeni ile alakalı etiketlerdir.Div sayfayı stillemek için kullanılırken span etiketi ise metnin belirli bir yerini stillemek için kullanılır.
+    -Aynı özelliğe sahip birden fazla öğeyi stilleyebilmek için class kullanılır.
+    -id uniq bir öğe var ise id si olmak zorundadır. Bir defa kullanılır
+    -Class ve id arasındaki fark ise id tek seçenekte kullanılır iken class birden fazla seçeneğe verilebilir.
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div And Span</title>
+    <style>
+        .kutu{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 2opx;
+            padding: 10px;
+        }
+        .kirmizi{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        Bu birinci <span class="kirmizi">spandir</span>
+    </div>
+    <div class="kutu">
+        Bu ikinci <span class="kirmizi">spandir</span>
+    </div>
+</body>
+</html>
